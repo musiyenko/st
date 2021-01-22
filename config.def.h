@@ -82,7 +82,7 @@ char *termname = "st-256color";
  *
  *	stty tabs
  */
-unsigned int tabspaces = 8;
+unsigned int tabspaces = 4;
 
 /* bg opacity */
 float alpha = 0.9;
@@ -147,7 +147,7 @@ static unsigned int rows = 24;
 /*
  * Default colour and shape of the mouse cursor
  */
-static unsigned int mouseshape = XC_xterm;
+static unsigned int mouseshape = XC_top_left_arrow;
 static unsigned int mousefg = 7;
 static unsigned int mousebg = 0;
 
@@ -169,7 +169,7 @@ static uint forcemousemod = ShiftMask;
  * Mouse history scrolling speed
  */
 
-static const unsigned int mouse_scroll_speed = 1;
+static const unsigned int mouse_scroll_speed = 5;
 /*
  * Internal mouse shortcuts.
  * Beware that overloading Button1 will disable the selection.
